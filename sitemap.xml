@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Main Homepage - Highest Priority -->
+    <url>
+        <loc>https://sridattam.in/</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-<url>
-  <loc>https://www.sridattam.in/</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/blog.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/refund-policy.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/privacy-policy.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/terms-conditions.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/index.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/blog/sarvamangala-siddha-mala-benefits.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.sridattam.in/blog/tridhara-rudraksha-benefits.html</loc>
-  <lastmod>2025-07-31T07:27:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+    <!-- Main Blog Page - High Priority -->
+    <url>
+        <loc>https://sridattam.in/blog.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
+    <!-- Blog Post Pages - High Priority Content -->
+    <url>
+        <loc>https://sridattam.in/blog/sarvamangala-siddha-mala-benefits.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sridattam.in/blog/tridhara-rudraksha-benefits.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Policy and Info Pages - Medium Priority -->
+    <url>
+        <loc>https://sridattam.in/faq.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sridattam.in/terms-conditions.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://sridattam.in/privacy-policy.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://sridattam.in/refund-policy.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
 
 </urlset>
