@@ -98,44 +98,39 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
                 <!-- START: HERO CAROUSEL SECTION -->
         <section id="hero-carousel" class="relative w-full overflow-hidden" aria-label="Image Carousel">
             
             <!-- Slides Container -->
             <div id="carousel-slides" class="flex transition-transform duration-700 ease-in-out">
 
-                <!-- SLIDE 1: T-Shirts -->
-                <!-- The entire slide is now an 'a' tag, making it fully clickable -->
-                <a href="products/Astra_Quartz_Silver_Bracelet.html" aria-label="Shop T-Shirts" class="carousel-item block w-full flex-shrink-0 h-[60vh] md:h-[500px] relative">
-                    
-                    <!-- Responsive Background Image using <picture> -->
+                <!-- SLIDE 1: Astra Quartz Silver Bracelet -->
+                <a href="products/Astra_Quartz_Silver_Bracelet.html" aria-label="Shop Astra Bracelet" class="carousel-item block w-full flex-shrink-0 h-[85vh] md:h-[600px] relative">
                     <picture>
-                        <!-- Desktop Image (landscape) -->
-                        <source media="(min-width: 768px)" srcset="pic/AQSB (1).png">
-                        <!-- Mobile Image (portrait) -->
-                        <img src="pic/AB.png" 
+                        <!-- Desktop Image (wide) -->
+                        <source media="(min-width: 625px)" srcset="pic/AB.png">
+                        <!-- Mobile Image (tall) -->
+                        <img src="pic/ABM.png" 
                             class="absolute inset-0 w-full h-full object-cover -z-10" 
-                            alt="Collection of T-shirts hanging on a rack">
+                            alt="Astra Quartz Silver Bracelet banner">
                     </picture>
-
                 </a>
-                <!-- To add another slide, you would copy the entire 'a' tag above and paste it here -->
 
+                
+                
             </div>
 
-            <!-- Navigation Arrows -->
-            <!-- These buttons have a high z-index (z-30) so they stay on top of the links -->
+            <!-- Navigation Arrows (These will appear automatically because there are 2+ slides) -->
             <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white text-black p-3 rounded-full shadow-md z-30">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                <svg xmlns="http://www.w.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
             </button>
             <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white text-black p-3 rounded-full shadow-md z-30">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                <svg xmlns="http://www.w.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
             </button>
 
         </section>
 
-        <!-- The updated JavaScript -->
+        <!-- The JavaScript does NOT need to be changed. It will work automatically. -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const carousel = document.getElementById('hero-carousel');
@@ -148,14 +143,12 @@
                 const totalSlides = slides.length;
                 let autoplayInterval;
 
-                // --- NEW CODE ADDED HERE ---
-                // If there's only one slide, hide the buttons and stop the script.
+                // This logic handles everything automatically
                 if (totalSlides <= 1) {
                     prevButton.style.display = 'none';
                     nextButton.style.display = 'none';
-                    return; // Exit the script, no need for carousel functionality
+                    return; 
                 }
-                // --- END OF NEW CODE ---
 
                 function updateCarousel() {
                     slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
